@@ -8,7 +8,7 @@ agent_created: true
 
 ## AVD 位置
 
-常用 AVD 在 `D:\Software\Android\AVD\`（`TestPhone`），启动脚本为同目录 `启动TestPhone.vbs`。
+常用 AVD 在 `D:\Software\Android\AVD\`（`TestPhone`），启动脚本为同目录 `AVD_boot.vbs`。
 
 ## 启动（计划任务方式）
 
@@ -22,7 +22,7 @@ Register-ScheduledTask -TaskName "emu_test" -Action (New-ScheduledTaskAction `
 Start-ScheduledTask -TaskName "emu_test"
 ```
 
-日常手动启动直接双击 `D:\Software\Android\AVD\启动TestPhone.vbs`。
+日常手动启动直接双击 `D:\Software\Android\AVD\AVD_boot.vbs`。
 
 ## 确认就绪
 
