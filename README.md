@@ -2,6 +2,11 @@
 
 可复用的 AI agent skills（通用方法沉淀），跨项目共享。
 
+> **AI 使用约定**：接手依赖本仓库 skill 的项目（如 zhihu-desk2mob）时，
+> **开始开发或测试前**先把所需 skill 目录复制为**项目级 skill**（如 WorkBuddy 的
+> `{workspace}/.workbuddy/skills/`），而不是每次现场翻这个仓库——项目级 skill 会被
+> AI 工具自动发现与加载，仓库副本只是上游源头。
+
 | Skill | 用途 |
 |---|---|
 | [avd-boot](avd-boot/) | Windows 上启动本机 Android 模拟器（AVD）：计划任务脱离调用会话启动，避免模拟器被连带杀死 |
@@ -11,4 +16,4 @@
 
 ## 使用
 
-把对应 skill 目录复制到项目级。
+把所需 skill 目录复制到项目级（AI 在新环境接手项目时，应先确认这些 skill 已就位）。
